@@ -1,0 +1,110 @@
+:root {
+  /*색상*/
+  --blue-color: #00e5ff;
+  --black-color: #212121;
+  --white-color: #fff;
+  --grey-dark-color: #616161;
+  --grey-light-color: #a4a4a4;
+
+  /*사이즈*/
+  --side-padding: 0 50px;
+  --padding: 15px;
+
+  /*폰트 사이즈*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+button:focus {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+/*헤더*/
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  max-width: 1100px;
+  margin: var(--side-padding);
+  padding-top: var(--padding);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: var(--padding);
+  font-size: var(--font-large);
+  font-weight: bolder;
+}
+
+.logo a {
+  color: var(--black-color);
+}
+
+.topMenu button{
+  margin-right: var(--padding);
+}
+
+.login {
+  border-right: 1px solid var(--grey-light-color);
+}
+
+.register {
+  border-right: 1px solid var(--grey-light-color);
+}
+
+.writeBtn {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  width: 80px;
+  height: 45px;
+}
+
+/*메뉴*/
+.menu {
+  display: flex;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+.menu ul {
+  display: flex;
+  flex: 90%;
+  padding: var(--padding) 50px;
+}
+
+.menu ul li a {
+  color: var(--grey-dark-color);
+  margin-right: var(--padding);
+}
+
+.Btn10 {
+  margin-top: var(--padding);
+}
+.Btn10 a {
+  font-weight: bolder;
+  color: var(--blue-color) !important;
+}
