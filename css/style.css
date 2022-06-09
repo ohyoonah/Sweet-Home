@@ -5,7 +5,8 @@
   --white-color: #fff;
   --grey-dark-color: #616161;
   --grey-light-color: #a4a4a4;
-  --box-color: #ededed;
+  --box-color: #f2f2f2;
+  --box-dark-color: #e9e9e9;
 
   /*사이즈*/
   --side-padding: 0 150px;
@@ -39,6 +40,18 @@ ul {
 a {
   text-decoration: none;
   color: var(--black-color);
+}
+
+.topMenu a:hover,
+.menu a:hover,
+.topMenu a:focus,
+.menu a:focus {
+  color: var(--blue-color) !important;
+}
+
+.menu a:focus {
+  border-bottom: 2px solid var(--blue-color);
+  padding-bottom: 8px;
 }
 
 body {
@@ -98,6 +111,10 @@ header {
   margin-right: var(--padding);
 }
 
+.search input:hover {
+  background-color: var(--box-color);
+}
+
 .search i {
   transform :translateY(50%);
   cursor : pointer;
@@ -117,7 +134,7 @@ header {
 }
 
 .topBtn ul li {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .topBtn i {
@@ -129,6 +146,11 @@ header {
 .login,
 .register {
   border-right: 1px solid var(--grey-light-color);
+}
+
+.login a,
+.register a {
+  padding-right: 10px;
 }
 
 .writeBtn {
@@ -181,14 +203,32 @@ header {
   margin: var(--side-padding);
 }
 
-.contents .image {
+.mainImage {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  transition: all 0.3s ease-in-out;
 }
 
-.contents .image img {
+.image {
+  overflow: hidden;
+  height: 600px;
+}
+
+#img1 {
+  width: 950px;
   border-radius: 5px;
+  margin-right: var(--padding);
+}
+
+
+#img2 {
+  border-radius: 5px;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
 }
 
 .btns {
@@ -197,11 +237,18 @@ header {
   margin: var(--margin);
 }
 
-.btns button {
+.btns img {
+  display: flex;
+  flex-direction: column;
   background-color: var(--box-color);
   width: 70px;
   height: 70px;
   border-radius: 30%;
+  margin-bottom: 10px;
+}
+
+.btns span {
+  font-size: 14px;
 }
 
 .story {
@@ -261,6 +308,10 @@ header {
   width: 250px;
   height: calc(350px / 3);
   padding: 35px;
+}
+
+.verticalBox:hover {
+  background-color: var(--box-dark-color);
 }
 
 .verticalBox .title {
