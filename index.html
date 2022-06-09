@@ -13,14 +13,22 @@
     <header>
       <div class="header">
         <div class="logo">
-          <a href="#">스위트 홈</a>
+          <a href="index.html"><img src="/img/logo.png"></a>
         </div>
         <div class="topMenu">
+          <input type="radio" id="tr1" name="topmenu" value="커뮤니티" checked>
+          <label for="tr1">커뮤니티</label>
+          <input type="radio" id="tr2" name="topmenu" value="스토어">
+          <label for="tr2">스토어</label>
+          <input type="radio" id="tr3" name="topmenu" value="이사/시공/수리">
+          <label for="tr3">이사/시공/수리</label>
+          <!--
           <ul>
             <li><a href="#">커뮤니티</a></li>
             <li><a href="#">스토어</a></li>
             <li><a href="#">이사/시공/수리</a></li>
           </ul>
+          -->
         </div>
         <div class="search">
           <i class="fas fa-search"></i>
@@ -28,7 +36,7 @@
         </div>
         <div class="topBtn">
           <ul>
-            <li><a href="#"><i class="fas fa-cart-shopping"></i></a></li>
+            <li class="cart"><a href="#"><i class="fas fa-cart-shopping"></i></a></li>
             <li class="login"><a href="#">로그인</a></li>
             <li class="register"><a href="#">회원가입</a></li>
             <li class="center"><a href="#">고객센터</a></li>
@@ -87,16 +95,45 @@
         </section>
       </section>
       <section class="btns">
-        <button><img src="/img/1.JPG"><span>쇼핑하기</span></button>
-        <button><img src="/img/1.JPG"><span>6월빅세일</span></button>
-        <button><img src="/img/1.JPG"><span>N평집들이</span></button>
-        <button><img src="/img/1.JPG"><span>공간별사진</span></button>
-        <button><img src="/img/1.JPG"><span>간편시공</span></button>
-        <button><img src="/img/1.JPG"><span>쉬운이사</span></button>
-        <button><img src="/img/1.JPG"><span>오늘의딜</span></button>
-        <button><img src="/img/1.JPG"><span>김나영Pick</span></button>
-        <button><img src="/img/1.JPG"><span>빠른배송</span></button>
-        <button><img src="/img/1.JPG"><span>프로집순이</span></button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-164656912612393299.png/512/none">
+          <span>쇼핑하기</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-165383283818676506.png/512/none">
+          <span>6월빅세일</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-164656922749115313.png/512/none">
+          <span>N평집들이</span
+            ></button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-164656930595208594.png/512/none">
+          <span>공간별사진</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-165475804975967307.png/512/none">
+          <span>간편시공</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-164758529751094973.png/512/none">
+          <span>쉬운이사</span></button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-164656963446270570.png/512/none">
+          <span>오늘의딜</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-165447788563050336.png/512/none">
+          <span>김나영Pick</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-164656918534331578.png/512/none">
+          <span>빠른배송</span>
+        </button>
+        <button>
+          <img src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-home_feed_shortcut_sets-165447656694064752.png/512/none">
+          <span>프로집순이</span>
+        </button>
       </section>
       <section class="story">
         <span>오늘의 스토리</span>
@@ -155,16 +192,42 @@
       <section class="categories">
         <span>카테고리별 상품 찾기</span>
         <div class="categoriesBtn">
-          <button>가구</button>
-          <button>패브릭</button>
-          <button>가전</button>
-          <button>유아·아동</button>
-          <button>조명</button>
-          <button>주방용품</button>
-          <button>데코식물</button>
-          <button>수납·정리</button>
-          <button>생활용품</button>
-          <button>생필품</button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>가구</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>패브릭</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>유아·아동</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>조명</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>주방용품</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>데코식물</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>수납·정리</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>생활용품</span>
+          </button>
+          <button>
+            <img src="/img/1.JPG">
+            <span>생필품</span>
+          </button>
         </div>
       </section>
     </div>
