@@ -49,10 +49,12 @@ a {
   color: var(--blue-color) !important;
 }
 
+/*
 .menu a:focus {
   border-bottom: 2px solid var(--blue-color);
   padding-bottom: 8px;
 }
+*/
 
 body {
   font-family: 'Gowun Dodum', sans-serif;
@@ -63,6 +65,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--white-color);
+  border-bottom: 1px solid var(--box-dark-color);
 }
 
 .header {
@@ -172,10 +175,37 @@ header {
   display: flex;
   justify-content: space-between;
   height: 50px;
-  border-top: 1px solid var(--grey-light-color);
-  border-bottom: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--box-dark-color);
   align-items: center;
 }
+
+.menuBox {
+  margin: var(--side-padding);
+}
+
+.menuBox label {
+  margin-right: 20px;
+  font-size: var(--font-small);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menuBox label:hover {
+  color: var(--blue-color);
+  
+}
+
+.menuBox input[type=radio] {
+  display: none;
+}
+
+.menu input[type=radio]:checked + label {
+  color: var(--blue-color);
+  border-bottom: 2px solid var(--blue-color);
+  padding-bottom: 8px;
+}
+
+/*
 .menu ul {
   display: flex;
   margin: var(--side-padding);
@@ -187,6 +217,7 @@ header {
   color: var(--grey-dark-color);
   margin-right: 20px;
 }
+*/
 
 .Btn10 {
  margin: var(--side-padding);
@@ -267,11 +298,14 @@ header {
 
 .contentsBox {
   display: flex;
+  
+  transition: all 0.3s ease-in-out;
 }
 
 .contentsBox .box {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 300px;
   height: 400px;
   margin-right: var(--padding);
@@ -281,6 +315,12 @@ header {
 .box > img {
   border-radius: 5px;
   height: 200px;
+  overflow: hidden;
+}
+
+.box img:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
 }
 
 .box > span {
