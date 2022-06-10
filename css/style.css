@@ -265,30 +265,31 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.image {
+.image1 {
   overflow: hidden;
   height: 550px;
-}
-
-#img1 {
-  border-radius: 5px;
-  margin-right: var(--padding);
-}
-
-#img1 img {
-  width: 950px;
-  height: 600px;
-}
-
-#img2 {
+  left: 0;
+  max-width: 75%;
   border-radius: 5px;
 }
 
-#img2 img {
-  height: 600px;
+.image2 {
+  overflow: hidden;
+  height: 550px;
+  right: 0;
+  border-radius: 5px;
 }
 
-.image img:hover {
+.image1 img {
+  width: 100%;
+}
+
+.image2 img {
+  height: 100%;
+}
+
+.image1 img:hover,
+.image2 img:hover {
   transform: scale(1.05);
   transition: transform .5s;
 }
