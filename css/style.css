@@ -278,7 +278,6 @@ header {
   height: 550px;
   right: 0;
   border-radius: 5px;
-  position: relative;
 }
 
 .image1 img {
@@ -294,38 +293,6 @@ header {
   transform: scale(1.05);
   transition: transform .5s;
 }
-
-.image2 button {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  border: none;
-  padding: 20px;
-  background-color: transparent;
-  color: #000;
-  font-weight: 800;
-  font-size: 24px;
-  opacity: 0.5;
-}
-
-.image2 button:hover {
-  background-color: #222;
-  color: #fff;
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-.image2 button:focus {
-  outline: 0;
-}
-
-#prev {
-  left: 0;
-}
-#next {
-  right: 0;
-}
-
 
 .btns {
   display: flex;
