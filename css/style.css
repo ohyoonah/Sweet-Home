@@ -61,6 +61,16 @@ a {
 }
 */
 
+@media screen and (max-width: 768px) {
+  .search {
+    display: none;
+  }
+
+  .topBtn > ul > .center {
+    display: none;
+  }
+}
+
 body {
   font-family: 'Gowun Dodum', sans-serif;
 }
@@ -199,15 +209,26 @@ header {
 
 /*메뉴*/
 .menu {
+  overflow-x: auto;
+  white-space: nowrap;
   display: flex;
   justify-content: space-between;
   height: 50px;
-  border-bottom: 1px solid var(--box-dark-color);
   align-items: center;
+  border-bottom: 1px solid var(--box-dark-color);
+}
+
+.menu::-webkit-scrollbar {
+  height: 3px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--box-dark-color);
 }
 
 .menuBox {
-  margin: var(--side-padding);
+  margin-left: 150px;
 }
 
 .menuBox label {
@@ -218,8 +239,7 @@ header {
 }
 
 .menuBox label:hover {
-  color: var(--blue-color);
-  
+  color: var(--blue-color); 
 }
 
 .menu input[type=radio]:checked + label {
@@ -243,7 +263,7 @@ header {
 */
 
 .Btn10 {
- margin: var(--side-padding);
+  margin-right: 150px;
 }
 
 .Btn10 a {
@@ -260,31 +280,27 @@ header {
 .mainImage {
   display: flex;
   justify-content: space-between;
-  height: 550px;
   margin-top: 30px;
   transition: all 0.3s ease-in-out;
+  max-height: 530px;
 }
 
 .image1 {
   overflow: hidden;
-  height: 550px;
-  left: 0;
-  max-width: 75%;
+  flex: 1 1 75%;
+  margin-right: var(--padding);
   border-radius: 5px;
 }
 
 .image2 {
+  flex: 1 1 20%;
   overflow: hidden;
-  height: 550px;
-  right: 0;
   border-radius: 5px;
 }
 
-.image1 img {
-  width: 100%;
-}
-
+.image1 img,
 .image2 img {
+  width: 100%;
   height: 100%;
 }
 
@@ -298,24 +314,32 @@ header {
   display: flex;
   justify-content: space-around;
   margin: var(--margin);
+  width: 100%;
+  height: 100%;
+}
+
+.btns button {
+  margin-right: 10px;
 }
 
 .btns button img {
   display: flex;
   flex-direction: column;
   background-color: var(--box-color);
-  width: 70px;
-  height: 70px;
+  width: 100%;
+  height: auto;
+  max-width: 65px;
+  max-height: 65px;
   border-radius: 30%;
   margin-bottom: 10px;
 }
 
 .btns button span {
-  margin-right: 3px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 1rem;
+  height: auto;
 }
 
+/*오늘의 스토리*/
 .story {
   margin: var(--margin);
 }
@@ -333,21 +357,24 @@ header {
 .contentsBox {
   display: flex;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 }
 
 .contentsBox .box {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 300px;
-  height: 400px;
+  max-width: 300px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
   margin-right: var(--padding);
   cursor: pointer;
 }
 
 .box > img {
   border-radius: 5px;
-  height: 200px;
+  max-height: 200px;
 }
 
 .box img:hover {
@@ -357,7 +384,12 @@ header {
 
 .box > span {
   padding: var(--padding);
-  font-size: var(--font-small);
+  overflow : hidden;
+  text-overflow : ellipsis;
+  height : 65px;
+  display : -webkit-box;
+  -webkit-line-clamp : 2;
+  -webkit-box-orient: vertical;
 }
 
 .user {
@@ -370,6 +402,7 @@ header {
 
 .moreBox {
   cursor: pointer;
+  width: 100%;
 }
 
 .verticalBox {
@@ -377,8 +410,10 @@ header {
   justify-content: space-between;
   background-color: var(--box-color);
   margin-bottom: 3px;
-  width: 250px;
-  height: calc(350px / 3);
+  max-width: 250px;
+  max-height: calc(350px / 3);
+  width: 100%;
+  height: 100%;
   padding: 35px;
 }
 
