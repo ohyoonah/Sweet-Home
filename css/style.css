@@ -96,10 +96,12 @@ header {
 /*탑메뉴*/
 .topMenu {
   margin-top: 5px;
+  width: 25%;
+  white-space: nowrap;
 }
 
 .topMenu label {
-  margin-right: 20px;
+  margin-right: 5%;
   font-size: var(--font-medium);
   font-weight: bold;
   cursor: pointer;
@@ -128,6 +130,7 @@ header {
 /*검색창*/
 .search {
   position: relative;
+  width: 25%;
 }
 
 .search input {
@@ -506,7 +509,14 @@ footer section {
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
+  .header,
+  .contents,
+  .menuBox,
+  footer section,
+  footer .company {
+    margin: 0 5%;
+  }
   .topBtn > ul > .center {
     display: none;
   }
